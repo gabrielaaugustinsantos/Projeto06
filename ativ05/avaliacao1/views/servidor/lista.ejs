@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Avaliação - Primeiro Trimestre</title>
+		<meta charset="UTF-8">
+		<link href="estilos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>Cadastro de Servidor</h1>
+		<hr>
+        <a href="/formServidor">Novo Servidor</a>
+        <br><br>
+		<table border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <th>Matrícula do Servidor</th>
+                <th>Nome do Servidor</th>
+                <th>Cargo do Servidor</th>
+            </tr>
+            <%
+            servidores.forEach((s, index) => {
+            %>
+            <tr>
+                <td><%= s.matricula %></td>
+                <td><%= s.nome %></td>
+                <td><%= s.cargo %></td>
+            </tr>
+            <%
+            })
+            %>
+        </table>
+	</body>
+</html>

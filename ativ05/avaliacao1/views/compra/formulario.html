@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Avaliação - Primeiro Trimestre</title>
+		<meta charset="UTF-8">
+		<link href="estilos.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>Solicitação de Compra</h1>
+		<hr>
+		<form action="/processar" method="post">
+			<fieldset>
+				<legend>Dados do Servidor</legend>
+				
+				<label for="matricula">Número da Matrícula:</label><br>
+				<input type="text" name="matricula" id="matricula" size="10"><br><br>
+			
+				<label for="nome">Nome do Servidor:</label><br>
+				<input type="text" name="nome" id="nome" size="30"><br><br>
+			
+				<label for="cargo">Cargo do Servidor:</label><br>
+				<input type="text" name="cargo" id="cargo" size="30">
+			</fieldset><br>
+			
+			<fieldset>
+				<legend>Dados do Material</legend>
+				
+				<label for="material">Nome da Material:</label><br>
+				<input type="text" name="material" id="material2" size="30"><br><br>
+			
+				<label for="descricao">Descrição do Material:</label><br>
+				<textarea name="descricao" id="descricao" rows="5" cols="50"></textarea><br><br>
+				
+				<label for="preco">Preço do Material:</label><br>
+				<input type="number" name="preco" id="preco" size="10" step="0.1"><br><br>
+				
+				<label for="unidade">Unidade do Material:</label><br>
+				<input type="text" name="unidade" id="unidade" size="20">
+			</fieldset><br>
+				
+			<label for="quantidade">Quantidade da Compra:</label>
+			<input type="number" name="quantidade" id="quantidade" size="10"><br><br>
+
+			<fieldset>
+				<legend>Urgência da Compra:</legend>
+
+				<input type="radio" name="urgencia" id="imediata" value="Imediata">
+				<label for="imediata">Imediata</label><br>
+
+				<input type="radio" name="urgencia" id="urgente" value="Urgente">
+				<label for="urgente">Urgente</label><br>
+
+				<input type="radio" name="urgencia" id="sem-urgencia" value="Sem Urgência">
+				<label for="sem-urgencia">Sem Urgência</label><br>
+
+			</fieldset><br>
+			
+			<input type="submit" name="imprimir" value="Imprimir Solicitação">
+			<input type="reset" name="limpar" value="Limpar">
+		</form>
+	</body>
+</html>
